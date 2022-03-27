@@ -1,4 +1,3 @@
-
 import os
 import pandas as pd
 import numpy as np
@@ -7,7 +6,7 @@ import pickle
 from flask import Flask, render_template, request
 
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 @app.route('/')
 def index():
@@ -16,7 +15,7 @@ def index():
 
 def ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1, 4)
-    loaded_model = pickle.load(open("model.pkl", "rb"))
+    loaded_model = pickle.load(open("TrainData.pkl", "rb"))
     result = loaded_model.predict(to_predict)
     return result[0]
 
@@ -32,5 +31,5 @@ def result():
     return render_template("predict.html", prediction=prediction)
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     app.run(debug=True)

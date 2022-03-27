@@ -435,6 +435,7 @@ a:focus {
 
 .shop-detail {
   padding: 50px;
+  justify-content: space-between;
 }
 
 .shop-detail h5 {
