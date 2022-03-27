@@ -30,7 +30,7 @@ body {
 
 .hero_area {
   height: 90vh;
-  background-image: url(../images/main-bg.jpg);
+  background-image: url(../images/pexels-markus-spiske-114296.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -136,6 +136,7 @@ a:focus {
   padding-left: 3px;
   font-weight: lighter;
   color: #0a0057;
+  align-content: left;
 }
 
 .custom_nav-container .navbar-toggler {}
@@ -423,7 +424,9 @@ a:focus {
 
 /* shop section */
 
-.shop_section {}
+.shop_section {
+  margin-bottom: 8px;
+}
 
 .shop_section .row {
   margin-top: 100px;
